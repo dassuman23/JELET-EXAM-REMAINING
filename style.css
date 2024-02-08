@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+#demo {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 8.3vmin;
+  color: #A16E15;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  z-index: 999;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.circle {
+  background-image: url(1200px-Jadavpur_University_Gate_No._4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90vmin;
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: -2px 0px 70px 25px rgba(0, 0, 0, 0.8);
+
+}
+
+.name{
+  position: relative;
+  left: 35vw;
+  top:45vh;
+  
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #DBAB2F, 0 0 40px #DBAB2F, 0 0 50px #DBAB2F, 0 0 60px #DBAB2F, 0 0 70px #DBAB2F;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #A16E15, 0 0 40px #A16E15, 0 0 50px #A16E15, 0 0 60px #A16E15, 0 0 70px #A16E15, 0 0 80px #A16E15;
+  }
+}
